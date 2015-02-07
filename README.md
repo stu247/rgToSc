@@ -1,5 +1,5 @@
 # rgToSc
-Add iTunes SoundCheck meta-data from Replay Gain meta-data.
+Add iTunes Sound Check meta-data from ReplayGain meta-data.
 
 I like to listen to large playlists in shuffle mode on my Sonos speakers.  Some songs in my collection are a lot louder than others.  By adjusting the gain on each song, the volume can be normalized so that the volume of all songs are about the same.  ReplayGain (http://wiki.hydrogenaud.io/index.php?title=ReplayGain_specification) is a widely supported standard for volume normalization.  It specifies storing the song specific gain in meta-data in each MP3 file. It does not modify the music itself.  That means that the software playing the music needs to understand and use the meta-data.
 
