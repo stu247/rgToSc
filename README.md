@@ -8,14 +8,14 @@ Unfortunately, Sonos does not support the ReplayGain standard for MP3 files, but
 The script can update individual files or directory structures.  If the file already contains the Sound Check meta-data, then it will not modify the file unless the -f option is used.  That way you can periodically run the script on your entire collection and only the new MP3 files will be updated, saving a lot of space during incremental backups.  
 
 In order to generate the ReplayGain meta-data that this script depends on, I use the excellent rgain Python package (https://bitbucket.org/fk/rgain/).  Here are the commands I use:
-
+```
 collectiongain --mp3-format=replaygain.org music_dir
 python rgToSc.py music_dir
-
+```
 There are a number of different possible formats to the ReplayGain meta-data for MP3 files.  The standard recommends that ID3v2 TXXX frames be used and that is what rgToSc.py uses.
 
 This script has been tested and works on GNU/Linux and Windows7.
 
-Dependencies
+#####Dependencies
 
 rgToSc.py depends on mutagen Python package (https://bitbucket.org/lazka/mutagen/overview).  The rgain package also depends on mutagen package, so installing the rgain package will take care of the rgToSc.py dependencies.  In Debian-based GNU/Linux distributions, the rgain APT package is python-rgain.
