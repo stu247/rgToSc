@@ -16,6 +16,6 @@ There are a number of different possible formats to the ReplayGain meta-data for
 
 This script has been tested and works on GNU/Linux and Windows7.
 
-#####Dependencies
+##### Dependencies
 
 rgToSc.py depends on mutagen Python package (https://bitbucket.org/lazka/mutagen/overview).  The rgain package also depends on mutagen package, so installing the rgain package will take care of the rgToSc.py dependencies.  In Debian-based GNU/Linux distributions, the rgain APT package is python-rgain.
